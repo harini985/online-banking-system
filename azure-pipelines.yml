@@ -1,0 +1,17 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+
+- script: echo "Building Online Banking System"
+  displayName: "Build Step"
+
+- script: echo "Testing Banking System"
+  displayName: "Test Step"
+
+- script: echo "Deploying Banking Application"
+  displayName: "Deploy Step"
